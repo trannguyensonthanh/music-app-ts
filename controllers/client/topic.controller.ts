@@ -7,6 +7,7 @@ export const topic = async(req: Request, res: Response): Promise<void> => {
   });
   console.log(topics);
  res.render("client/pages/topics/index.pug", {
-  pageTitle: "chủ đề bài hát"
+  pageTitle: "chủ đề bài hát",
+  topics: topics
  });
 }

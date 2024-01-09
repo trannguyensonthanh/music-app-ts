@@ -6,5 +6,7 @@ export const topic = async(req: Request, res: Response): Promise<void> => {
     deleted: false
   });
   console.log(topics);
- res.render("client/pages/topics/index.pug");
+ res.render("client/pages/topics/index.pug", {
+  pageTitle: "chủ đề bài hát"
+ });
 }

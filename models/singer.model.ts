@@ -1,10 +1,9 @@
 import mongoose from 'mongoose';
-const topicSchema = new mongoose.Schema({
+const singerSchema = new mongoose.Schema({
     
-title: String,
+fullName: String,
 status: String,
 avatar: String,
-description: String,
 slug: String,
 deleted: {
   type: Boolean,
@@ -15,6 +14,6 @@ deletedAt: Date
   timestamps: true // thời gian tạo và cập nhật
 });
 
-const Topic = mongoose.model("Topic", topicSchema, "topics"); 
+const Singer = mongoose.model("Singer", singerSchema, "singers"); 
 
-export default Topic;  
+export default Singer;  

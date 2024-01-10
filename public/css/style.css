@@ -131,6 +131,20 @@ body {
   margin-right: 10px;
 }
 
+.singer-detail .inner-actions .inner-like img {
+  color: #0059ff;
+}
+.singer-detail .inner-actions .inner-like {
+  cursor: pointer;
+}
+.singer-detail .inner-actions .inner-like.active {
+  color: #ff001e;
+}
+.singer-detail .inner-actions .inner-like.active img {
+  color: #0059ff;
+  font-weight: 900;
+}
+
 /* Style for the icons in the inner-action divs */
 .inner-action img {
   margin-right: 5px;
@@ -163,6 +177,7 @@ object-fit: cover;
  animation-duration: 12s;
  animation-iteration-count: infinite;
  animation-timing-function: linear ;
+ animation-play-state: paused;
 }
 
 @keyframes spin {

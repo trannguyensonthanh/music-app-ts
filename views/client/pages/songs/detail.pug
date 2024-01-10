@@ -22,7 +22,7 @@ block main
             div(class="inner-action inner-like" button-like=song.id)
               img(width="15" height="15" src="https://img.icons8.com/windows/32/thumb-up.png" alt="thumb-up")
               span #{song.like} thích
-            div(class="inner-action inner-heart")
+            div(class=("inner-action inner-heart" + (song.isFavoriteSong ? "active" : "")) button-favorite=song.id)
               img(width="15" height="15" src="https://img.icons8.com/ios/50/like--v1.png" alt="like--v1")
               span Bài hát yêu thích
 

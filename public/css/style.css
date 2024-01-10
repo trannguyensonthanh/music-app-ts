@@ -145,6 +145,14 @@ body {
   font-weight: 900;
 }
 
+.singer-detail .inner-heart.active {
+  color: #ff001e;
+  font-weight: 900;
+}
+.singer-detail .inner-heart {
+  cursor: pointer;
+}
+
 /* Style for the icons in the inner-action divs */
 .inner-action img {
   margin-right: 5px;
@@ -193,6 +201,7 @@ object-fit: cover;
 .inner-audio {
   flex-grow: 1;
 }
+
 
 /* Style for the .inner-desc sections */
 .inner-desc {

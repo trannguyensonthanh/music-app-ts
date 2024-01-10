@@ -103,6 +103,102 @@ color: #585858;
 }
 
 
+/* singer detail */
+
+/* Apply a background color and some basic styles to the whole page */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Style for the .inner-actions section */
+.inner-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each inner-action div */
+.inner-action {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* Style for the icons in the inner-action divs */
+.inner-action img {
+  margin-right: 5px;
+}
+
+/* Style for the .inner-play section */
+.inner-play {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the .inner-avatar section */
+.inner-avatar img {
+  width: 100px;
+  height: 100px;
+object-fit: cover;
+}
+.singer-detail .inner-avatar  {
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ overflow: hidden;
+ border: 5px solid #f57f20;
+ margin-right: 20px;
+ animation-name: spin;
+ animation-duration: 12s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear ;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for the .inner-audio section */
+.inner-audio {
+  flex-grow: 1;
+}
+
+/* Style for the .inner-desc sections */
+.inner-desc {
+  margin-top: 20px;
+}
+
+/* Style for the .inner-label and .inner-text elements inside .inner-desc */
+.inner-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.inner-text {
+  line-height: 1.5;
+}
+
+/* Add some spacing between different sections */
+.inner-actions + .inner-play,
+.inner-play + .inner-desc {
+  margin-top: 20px;
+}
 
 
 

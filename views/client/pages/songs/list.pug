@@ -13,11 +13,11 @@ block main
         .col-6.mb-3 
           div(class="song-item")
             div(class="inner-image")
-              a(href=`/song/detail/${song.slug}`)
+              a(href=`/songs/detail/${song.slug}`)
                 img(src=song.avatar)
             div(class="inner-content")
               div(class="inner-title")
-                a(href=`/song/detail/${song.slug}`)  #{song.title}
+                a(href=`/songs/detail/${song.slug}`)  #{song.title}
 
               div(class="inner-singer") 
                 <img width="15" height="15" src="https://img.icons8.com/ios-filled/50/radio-studio.png" alt="radio-studio"/> #{song.infoSinger.fullName} 

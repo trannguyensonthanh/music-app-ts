@@ -145,11 +145,16 @@ body {
   font-weight: 900;
 }
 
-.singer-detail .inner-heart.active {
+.inner-heart.active {
   color: #ff001e;
   font-weight: 900;
 }
-.singer-detail .inner-heart {
+
+.inner-heart.active i {
+  color: #ff001e;
+  font-weight: 900;
+}
+.inner-heart {
   cursor: pointer;
 }
 

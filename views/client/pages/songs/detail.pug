@@ -19,6 +19,9 @@ block main
             div(class="inner-action inner-topic")
               img(width="15" height="15" src="https://img.icons8.com/ios/50/apple-music.png" alt="apple-music")
               span #{topic.title}
+            div(class="inner-action inner-listen")
+              <i class='fa-solid fa-headphones'></i>
+              span #{song.listen} lượt nghe
             div(class="inner-action inner-like" button-like=song.id)
               img(width="15" height="15" src="https://img.icons8.com/windows/32/thumb-up.png" alt="thumb-up")
               span #{song.like} thích

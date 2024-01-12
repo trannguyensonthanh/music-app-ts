@@ -27,8 +27,10 @@ block main
       label(for="avatar") Ảnh:
       input(type="file" id="avatar" name="avatar" class="form-control-file" upload-image-input accept="image/*")
       img(src="" alt="" class="image-preview" upload-image-preview)
-    
 
+    div(class="form-group")
+      label(for="audio") file âm thanh:
+      input(type="file" id="audio" name="audio" class="form-control-file" accept="audio/*")
 
     div(class="form-group")
       label(for="desc") Mô tả:

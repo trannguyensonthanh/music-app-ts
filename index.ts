@@ -14,6 +14,12 @@ app.set("view engine", "pug"); // sử dụng pug
 database.connect(); // kết nối với mongodb
 app.use(express.static(`${__dirname}/public`)); // sử dụng file static để cho code bk là file nào đc xuất ra  sử dụng thêm __dirname để sử dụng trên cả online luôn
 
+// Sử dụng middleware để xử lý dữ liệu JSON
+app.use(express.json());
+
+// Sử dụng middleware để xử lý dữ liệu từ form-urlencoded
+app.use(express.urlencoded({ extended: true }));
+
 // tinymce
 app.use('/tinymce', express.static(path.join(__dirname, 'node_modules', 'tinymce')));
 // end tiny mce

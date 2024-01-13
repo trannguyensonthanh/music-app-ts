@@ -1,6 +1,7 @@
 import express, {Express, Request, Response} from "express"
 import dotenv from "dotenv";
 import path from "path";
+import methodOverride from "method-override"
 import * as database from "./config/database";
 import clientRoutes from "./routes/client/index.route";
 import adminRoutes from "./routes/admin/index.route";
@@ -13,6 +14,7 @@ app.set("views", `${__dirname}/views`); // đẩy dữ liệu ra views  sử d�
 app.set("view engine", "pug"); // sử dụng pug
 database.connect(); // kết nối với mongodb
 app.use(express.static(`${__dirname}/public`)); // sử dụng file static để cho code bk là file nào đc xuất ra  sử dụng thêm __dirname để sử dụng trên cả online luôn
+app.use(methodOverride("_method"));
 
 // Sử dụng middleware để xử lý dữ liệu JSON
 app.use(express.json());

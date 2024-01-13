@@ -1,0 +1,29 @@
+extends ../../layouts/default.pug
+include ../../mixins/box-head.pug
+
+
+block main
+  .container.my-3
+    .row 
+      .col-12 
+        +box-head(pageTitle)
+
+    .row 
+      each song in songs
+        .col-6.mb-3 
+          div(class="song-item")
+            div(class="inner-image")
+              a(href=`/songs/detail/${song.slug}`)
+                img(src=song.avatar)
+            div(class="inner-content")
+              div(class="inner-title")
+                a(href=`/songs/detail/${song.slug}`)  #{song.title}
+
+              div(class="inner-singer") 
+                <img width="15" height="15" src="https://img.icons8.com/ios-filled/50/radio-studio.png" alt="radio-studio"/> #{song.infoSinger.fullName} 
+              div(class="inner-like")
+                <img width="15" height="15" src="https://img.icons8.com/windows/32/thumb-up.png" alt="thumb-up"/> #{song.like}
+              div(class="inner-time")
+                <img width="15" height="15" src="https://img.icons8.com/ios/50/clock--v1.png" alt="clock--v1"/> Hôm nay
+  
+        

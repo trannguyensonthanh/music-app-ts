@@ -33,6 +33,11 @@ block main
       input(type="file" id="audio" name="audio" class="form-control-file" upload-audio-input accept="audio/*")
       audio(controls upload-audio-play)
         source(src="" upload-audio-preview) 
+
+    div(class="form-group")
+      label(for="lyrics") Lời bài hát:
+      textarea(id="lyrics" name="lyrics" class="form-control" rows = "20" )
+
     div(class="form-group")
       label(for="desc") Mô tả:
       textarea(id="desc" type="text" name="description" class="form-control" rows = "5" textarea-mce)

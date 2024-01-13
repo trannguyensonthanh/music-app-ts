@@ -219,8 +219,9 @@ object-fit: cover;
   margin-bottom: 5px;
 }
 
-.inner-text {
+.inner-desc .inner-text {
   line-height: 1.5;
+  white-space: pre;
 }
 
 /* Add some spacing between different sections */
